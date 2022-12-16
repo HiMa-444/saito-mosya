@@ -1,11 +1,20 @@
 .for-pc {
     display:block;
 }
+.for-sp-1 {
+    display:none;
+}
 .for-sp {
     display:none;
 }
+@media only screen and (max-width:768px) {
+    .for-pc{display: none;}
+    .for-sp-1{display: block;}
+    .for-sp{display: none;}
+}
 @media only screen and (max-width:375px) {
     .for-pc{ display: none}
+    .for-sp-1{ display: none;}
     .for-sp{ display: block}
 }
 .abs {
@@ -179,7 +188,7 @@ a {
 }
 .togle-btn {
     top: 12px;
-    right: 28px;
+    right: 110px;
     width: 30px;
     height: 30px;
     display: block;
@@ -297,8 +306,175 @@ a {
 }
 .fc {
     position: relative;
-    left: 35px;
+    left: 0px;
     top: 15px;
     justify-content: space-between;
     font-size: smaller;
+}
+.main-1 {
+    position: relative;
+    top: 60px;
+}
+.main-1-chi {
+    position: relative;
+    top: -800px;
+    left: -20px;
+}
+.imgposi-1 {
+    position: relative;
+    right: -260px;
+}
+.comment {
+    position: relative;
+    left: 80px;
+    font-size: xx-large;
+    justify-content: space-around;
+}
+.imgs {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.imgs-1 {
+    width: 125px;height: 125px;
+}
+.imgs-2 {
+    width: 160px;height: 160px;
+}
+.imgs img:nth-child(1) {
+    position: relative;
+    right: 20px;
+}
+.imgs img:nth-child(2) {
+    position: relative;
+    right: 110px;
+}
+.imgs img:nth-child(3) {
+    position: relative;
+    right: 200px;
+}
+.links {
+    position: relative;
+    justify-content: space-around;
+}
+.links-1 {
+    position: relative;
+    left: -45px;
+    padding: 20px 50px;
+    background-color: orange;
+    border-radius: 40px;
+}
+.links-2 {
+    position: relative;
+    left: -155px;
+    padding: 20px 30px;
+    background-color: white;
+    border-color: lightgray;
+    border-radius: 40px;
+}
+.vidsize {
+    padding-top: 30px;
+    width: 65%;
+    justify-content: space-around;
+}
+.main-2 {
+    display: flex;
+    position: relative;
+    top: -670px;
+    width: 100%;
+    background-color: orange;
+}
+.sen-1 {
+    display: block;
+    color: white;
+    position: relative;
+    left: 150px;
+}
+.sen-2 {
+    font-size: xx-large;
+}
+.sen-3 {
+    width: 500px;
+}
+.link-1 {
+    color: white;
+}
+.gray-2 {
+    color: gray;
+    font-size: x-small;
+    opacity: 0.9;
+    position: relative;
+    top: 70px;
+    left: 70px;
+}
+.fixed-tab {
+    width: 768px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+.fixed-tab-cil {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.humburger-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top:10px;
+    right:20px;
+    z-index: 20;
+}
+.humburger-menu span {
+    background-color: gray;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+.humburger-menu span:nth-child(1) {
+    top: 5px;
+}
+.humburger-menu span:nth-child(2) {
+    top: 15px;
+}
+.humburger-menu span:nth-child(3) {
+    top: 25px;
+}
+.view1.humburger-menu span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.view1.humburger-menu span:nth-child(2) {
+    display: none;
+}
+.view1.humburger-menu span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+.menu-sc1 {
+    width: 768px;
+    height: 690px;
+    position: fixed;
+    top: 0;
+    left: -5000px;
+    background-color: #000000;
+    z-index: 10;
+    opacity: 0.7;
+}
+.screen1.menu-sc1 {
+    left: 0;
+    top: 40px;
+    z-index: 11;
+}
+.tab-menu-11 {
+    font-size: larger;
+    list-style: none;
+    color: white;
+    display: block;
+    flex-direction: column;
+    opacity: 1;
+    position: relative;
+    left: 180px;
 }
